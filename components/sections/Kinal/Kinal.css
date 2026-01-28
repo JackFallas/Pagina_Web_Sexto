@@ -19,7 +19,7 @@
     border-radius: 15px;
     /* Ajuste de ruta: desde css/ a common/img/ */
     background: linear-gradient(rgba(0, 20, 50, 0.6), rgba(0, 20, 50, 0.6)), 
-                url("/components/common/img/fondo-ficha.png") no-repeat center/cover;
+                url("components/common/img/fondo-ficha.png") no-repeat center/cover;
     border: 2px solid var(--color-aqua);
 }
 
