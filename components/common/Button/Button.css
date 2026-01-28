@@ -1,0 +1,28 @@
+/* Boton principal */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-aqua);
+    color: var(--color-azul-profundo);
+    padding: 16px 35px;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--color-aqua);
+    transition: var(--transicion);
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-aqua);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 213, 255, 0.2);
+}
+
+/* Efecto al hacer clic */
+.btn-primary:active {
+    transform: translateY(0);
+}

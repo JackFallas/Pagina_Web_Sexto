@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rediseño Kinal | Propuesta</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="components/layout/Header/Header.css">
+    <link rel="stylesheet" href="components/layout/Footer/Footer.css">
+    <link rel="stylesheet" href="components/sections/kinal/Kinal.css">
 </head>
 <body>
-    
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">KINAL REDESIGN</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="kinal.html" class="active">Rediseño Kinal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="kinal-hero">
+            <div class="hero-inner-frame">
+                <h1 class="kinal-title">FUNDACIÓN KINAL</h1>
+                <p>El trabajo bien hecho es nuestro valor fundamental.</p>
+            </div>
+        </section>
+
+        <section class="kinal-section container">
+            <h2 class="section-main-title">Galería de Superación</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <div class="card-header">Técnico Universitario</div>
+                    <div class="card-body">Información sobre programas de especialización superior.</div>
+                </div>
+                <div class="photo-card">
+                    <div class="card-header">Ciclo Básico</div>
+                    <div class="card-body">Formación integral para el desarrollo de jóvenes.</div>
+                </div>
+                <div class="photo-card">
+                    <div class="card-header">Escuela Técnica</div>
+                    <div class="card-body">Capacitación técnica para la inserción laboral.</div>
+                </div>
+            </div>
+
+            <div class="kinal-impact-box">
+                <h2 class="section-main-title">Impacto Institucional</h2>
+                <div class="stats-grid">
+                    <div class="stat-item"><strong data-target="30">0</strong><span>Escuela Técnica</span></div>
+                    <div class="stat-item"><strong data-target="7">0</strong><span>Diversificado</span></div>
+                    <div class="stat-item"><strong data-target="39">0</strong><span>Egresados Totales</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info-section container">
+            <div class="contact-grid">
+                <div class="contact-logo-box">
+                    <img src="/components/common/img/logo.svg" alt="Logo Kinal" class="contact-logo">
+                </div>
+                <div class="contact-block">
+                    <h3>CONTACTO</h3>
+                    <p>Tel: (502) 2387-7600</p>
+                    <p>Email: info@kinal.org.gt</p>
+                </div>
+                <div class="contact-block">
+                    <h3>DIRECCIÓN</h3>
+                    <p>6a. Avenida 13-54, Colonia Landívar, Zona 7.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 - Fundación Kinal</p>
+    </footer>
+
+    <script src="components/sections/kinal/Kinal.js"></script>
 </body>
 </html>

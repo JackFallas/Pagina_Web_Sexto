@@ -1,0 +1,30 @@
+:root {
+    /* --- PALETA WEB (Intro y Bio) --- */
+    --color-aqua: #00d5ff;
+    --color-aqua-dark: #00acc1;
+    --color-aqua-glow: rgba(0, 213, 255, 0.3);
+    
+    /* Azul profundo y variantes oscuras */
+    --color-azul-dark: #011627;    
+    --color-azul-profundo: #011627;
+    --color-azul-medium: #0b253a;  /* Para tarjetas o secciones */
+
+    --color-celeste: #e0f7fa;
+    --color-gris-fondo: #f4f7f6;
+    --color-gris-texto: #333333;
+    --color-gris-suave: #9e9e9e;
+
+    /* --- PALETA KINAL (Rediseño) --- */
+    --kinal-azul: #003366;       /* Azul institucional */
+    --kinal-dorado: #e6b800;     /* Dorado institucional */
+    --kinal-gris: #64748b;       /* Gris para textos secundarios */
+
+    /* --- FUENTES Y TAMAÑOS --- */
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --max-width: 1200px;
+    --border-radius: 15px;
+    --sombra-suave: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* --- ANIMACIONES --- */
+    --transicion: all 0.3s ease;
+}

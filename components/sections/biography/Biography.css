@@ -1,0 +1,70 @@
+/* Configuración de la sección para asegurar el centrado y espacio */
+.bio-section {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo del título: min-height evita que el layout salte al cargar */
+.bio-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--color-aqua);
+    font-family: 'Consolas', monospace;
+    margin-bottom: 40px;
+    min-height: 1.2em;
+    display: inline-block;
+    position: relative;
+}
+
+/* Estilo del cursor que acompaña al texto de forma proporcional */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--color-aqua);
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+    vertical-align: middle;
+}
+
+/* Tarjeta contenedora con aparición suave inicial */
+.bio-card {
+    background: var(--color-azul-medium);
+    border: 1px solid rgba(0, 213, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 40px;
+    max-width: 850px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards 0.5s;
+}
+
+/* Estilos para el contenido interno que se escribirá */
+.bio-card h2, 
+.bio-card p {
+    font-family: 'Consolas', monospace;
+    color: var(--color-celeste);
+    margin-bottom: 20px;
+    min-height: 1em;
+}
+
+.bio-card h2 {
+    color: var(--color-aqua);
+    font-size: 1.5rem;
+}
+
+/* Animación de parpadeo del cursor */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Animación de entrada para la tarjeta */
+@keyframes fadeInUp {
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}

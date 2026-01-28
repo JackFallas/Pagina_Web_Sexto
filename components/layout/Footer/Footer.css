@@ -1,0 +1,20 @@
+/* --- PIE DE PÁGINA --- */
+.main-footer {
+    background-color: var(--color-azul-dark);
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 1px solid var(--color-aqua-glow);
+    margin-top: 80px; /* Espacio con el contenido de arriba */
+}
+
+.main-footer p {
+    color: var(--color-gris-suave);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Un detalle extra por si quieres poner tu nombre resaltado */
+.main-footer p span {
+    color: var(--color-aqua);
+    font-weight: bold;
+}

@@ -1,0 +1,67 @@
+/* --- BARRA DE NAVEGACIÓN SUPERIOR --- */
+.main-header {
+    background-color: var(--color-azul-dark);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky; /* Se queda fijo al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--color-aqua-glow);
+}
+
+.nav-container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilo del Logo - Resaltado en Aqua */
+.logo {
+    color: var(--color-aqua);
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-shadow: 0 0 10px var(--color-aqua-glow);
+}
+
+/* Contenedor de los enlaces */
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+}
+
+/* Efecto de línea inferior al pasar el mouse */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-aqua);
+    transition: var(--transicion);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--color-aqua);
+}

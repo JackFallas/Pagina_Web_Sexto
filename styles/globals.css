@@ -1,0 +1,50 @@
+@import url('./variables.css');
+
+/* Reseteo básico para que todo cuadre */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración del cuerpo de la página */
+body {
+    font-family: var(--fuente-principal);
+    /* Usamos el azul profundo como fondo principal */
+    background-color: var(--color-azul-dark);
+    /* Texto blanco por defecto para que sea legible */
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Contenedor estándar para centrar el contenido */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos con tu color aqua */
+h1, h2, h3 {
+    color: var(--color-aqua);
+    margin-bottom: 20px;
+}
+
+/* Enlaces sin subrayado por defecto */
+a {
+    text-decoration: none;
+    transition: var(--transicion);
+}
+
+/* Lista de navegación limpia */
+ul {
+    list-style: none;
+}
+
+/* Imágenes que no se salen de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

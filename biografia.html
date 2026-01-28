@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biografía | Sobre Mí</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="components/layout/Header/Header.css">
+    <link rel="stylesheet" href="components/layout/Footer/Footer.css">
+    <link rel="stylesheet" href="components/sections/banner/Hero.css">
+    <link rel="stylesheet" href="components/common/Button/Button.css">
+    <link rel="stylesheet" href="components/sections/biography/Biography.css"> 
 </head>
 <body>
-    
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">Pagina Web</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html" class="active">Biografía</a></li>
+                <li><a href="kinal.html">Rediseño Kinal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="bio-section container">
+            <h1 class="bio-title typewriter">Mi Autobiografía</h1>
+
+            <div class="bio-card">
+                <p>
+                    Hola empecemos por mi nombre Jack Fallas, generalmente mis compañeros de kinal acostumbraron a llamarme fallas por costumbre asi que es raro que me 
+                    llamen por mi nombre.
+                </p>
+                
+                <h2>Mis Gustos</h2>
+                <p>
+                    En general hay bastantes cosas que me apasionan como para escoger algunas pocas podrian ser principalmente escuchar musica, jugar videojuegos, 
+                    aprender o superarme mental y fisicamente y me encanta proponerme retos que no se si soy capaz de cumplir en totalidad pero me gusta intentarlos.
+                </p>
+                
+                <h2>Tiempo Dedicado</h2>
+                <p>
+                    Sinceramente utilizo mi tiempo de manera poco optima soy alguien bastante desorganizado con mis tareas diarias pero busco mejorar y tener control 
+                    sobre mi vida poco a poco, sin embargo soy capaz de centrarme y dedicarme por completo a tareas de mi interes buscando siempre dar el mejor resultado
+                    posible sin importarme el tiempo que este me tome.
+                </p>
+                
+                <h2>Otras Habilidades e Información</h2>
+                <p>
+                    En realidad busco aprender nuevas tecnologias o implementarlas en proyectos e trabajado con muchas pero no tengo conocimiento intermedio en alguna 
+                    de ellas aunque me gusta aprender poco a poco sobre las mas nuevas tecnologias, e llegado a utilizar o aprender sobre:
+                    HTML, CSS, JavaScript, Python, Java, SQL, Git, GitHub, Bootstrap, Tailwind entre otras, aunque no domino ninguna de ellas de momento.
+                </p>
+                
+                <h2>Expectativas Futuras</h2>
+                <p>
+                    Expectativas a futuro pues de ser posible me gustaria llegar a trabajar en alguna empresa de prestigio o crear mi propia empresa aunque me llama
+                    la atencion si pudiese llegar a conseguir alguna beca con algun proyecto que pueda desarrollar a lo largo de mi estadia en kinal o posterior a esta.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 - Proyecto de Desarrollo Web | <span>Jack Fallas</span></p>
+    </footer>
+
+    <script src="components/sections/biography/Biography.js"></script>
+
 </body>
 </html>

@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina principal</title>
-    <link rel="stylesheet" href="/styles/tailwind/style.css">
+    <title>Inicio | Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="components/layout/Header/Header.css">
+    <link rel="stylesheet" href="components/layout/Footer/Footer.css">
+    <link rel="stylesheet" href="components/sections/banner/Hero.css">
+    <link rel="stylesheet" href="components/sections/previews/Previews.css">
+    <link rel="stylesheet" href="components/common/Button/Button.css">
 </head>
 <body>
-    <h1 class="text-4xl font-bold text-blue-600 bg-yellow-200 p-10 text-center">
-        Prueba de tailwind
-    </h1>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">Pagina Web</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="kinal.html">Rediseño Kinal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <h1>Bienvenidos a mi <span>Propuesta Web</span></h1>
+                <p>Explora mi biografia y mi visión sobre el diseño moderno aplicado a instituciones educativas.</p>
+                <div class="hero-btns">
+                    <a href="biografia.html" class="btn-primary">Conóceme más</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="container">
+            <div class="previews-grid">
+                
+                <article class="preview-card">
+                    <div class="card-tag">Autobiografía</div>
+                    <h3>Mi Biografia</h3>
+                    <p>Un vistazo a mis motivaciones, formación técnica y lo que me apasiona del desarrollo de software.</p>
+                    <a href="biografia.html" class="btn-secondary">Ver perfil →</a>
+                </article>
+
+                <article class="preview-card">
+                    <div class="card-tag">Caso de Estudio</div>
+                    <h3>Rediseño Kinal</h3>
+                    <p>Propuesta visual basada en la identidad institucional, optimizando la experiencia del usuario.</p>
+                    <a href="kinal.html" class="btn-secondary">Ver proyecto →</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 - Proyecto de Desarrollo Web | <span>Jack Fallas</span></p>
+    </footer>
+
 </body>
 </html>
